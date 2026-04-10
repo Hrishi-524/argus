@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { NAV_ITEMS, ENGINES } from "@/lib/mock-data";
+import { NAV_ITEMS, ENGINES } from "@/lib/mock/mock-data";
 import type { EngineStatus } from "@/types/argus";
 
 const NAV_ICONS: Record<string, React.ReactNode> = {
