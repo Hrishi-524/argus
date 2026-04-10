@@ -6,6 +6,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Live Alerts", href: "/alerts", icon: "shield-alert", badgeCount: 12 },
   { label: "Account DNA", href: "/accounts", icon: "fingerprint" },
   { label: "Network View", href: "/network", icon: "git-branch" },
+  { label: "PS-402 Signals", href: "/ps402", icon: "alert-circle" },
   { label: "Case Builder", href: "/cases", icon: "briefcase" },
   { label: "Weekly Summary", href: "/summary", icon: "bar-chart-3" },
   { label: "Mitigation Center", href: "/mitigation", icon: "shield-check" },
