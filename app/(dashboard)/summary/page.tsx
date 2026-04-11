@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function ReportsPage() {
+export default function SummaryPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-1">
@@ -10,7 +10,7 @@ export default function ReportsPage() {
           Weekly Summary
         </h1>
         <p className="text-sm text-zinc-400">
-          Aggregated surveillance reports and trend analysis
+          Aggregated surveillance metrics and weekly trend analysis
         </p>
       </div>
 
@@ -36,11 +36,10 @@ export default function ReportsPage() {
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-zinc-300">
-            Reports Dashboard
+            Weekly Analytics
           </h3>
           <p className="mt-2 max-w-md text-center text-sm text-zinc-500">
-            Weekly surveillance summary reports will be generated here.
-            Connect to backend /reports endpoint for data.
+            Summary reports and trend visualizations will appear here.
           </p>
         </div>
       </div>

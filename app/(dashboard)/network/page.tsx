@@ -2,15 +2,15 @@
 
 import React from "react";
 
-export default function ReportsPage() {
+export default function NetworkPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-1">
         <h1 className="text-2xl font-bold tracking-tight text-zinc-50">
-          Weekly Summary
+          Network View
         </h1>
         <p className="text-sm text-zinc-400">
-          Aggregated surveillance reports and trend analysis
+          Graph-based entity relationship analysis and fund flow visualization
         </p>
       </div>
 
@@ -29,18 +29,18 @@ export default function ReportsPage() {
               strokeLinejoin="round"
               className="text-zinc-400"
             >
-              <path d="M3 3v18h18" />
-              <path d="M18 17V9" />
-              <path d="M13 17V5" />
-              <path d="M8 17v-3" />
+              <line x1="6" x2="6" y1="3" y2="15" />
+              <circle cx="18" cy="6" r="3" />
+              <circle cx="6" cy="18" r="3" />
+              <path d="M18 9a9 9 0 0 1-9 9" />
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-zinc-300">
-            Reports Dashboard
+            Network Graph
           </h3>
           <p className="mt-2 max-w-md text-center text-sm text-zinc-500">
-            Weekly surveillance summary reports will be generated here.
-            Connect to backend /reports endpoint for data.
+            Entity relationship network visualization will be displayed here.
+            Select an account or alert to explore connections.
           </p>
         </div>
       </div>

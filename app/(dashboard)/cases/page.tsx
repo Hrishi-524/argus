@@ -2,15 +2,15 @@
 
 import React from "react";
 
-export default function ReportsPage() {
+export default function CasesPage() {
   return (
     <div className="space-y-6">
       <div className="space-y-1">
         <h1 className="text-2xl font-bold tracking-tight text-zinc-50">
-          Weekly Summary
+          Case Builder
         </h1>
         <p className="text-sm text-zinc-400">
-          Aggregated surveillance reports and trend analysis
+          SEBI case construction and evidence management workspace
         </p>
       </div>
 
@@ -29,18 +29,15 @@ export default function ReportsPage() {
               strokeLinejoin="round"
               className="text-zinc-400"
             >
-              <path d="M3 3v18h18" />
-              <path d="M18 17V9" />
-              <path d="M13 17V5" />
-              <path d="M8 17v-3" />
+              <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              <rect width="20" height="14" x="2" y="6" rx="2" />
             </svg>
           </div>
           <h3 className="text-lg font-semibold text-zinc-300">
-            Reports Dashboard
+            SEBI Case Manager
           </h3>
           <p className="mt-2 max-w-md text-center text-sm text-zinc-500">
-            Weekly surveillance summary reports will be generated here.
-            Connect to backend /reports endpoint for data.
+            Build enforcement cases by linking alerts, accounts, and evidence.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { TopBar } from "@/components/layout/TopBar";
-import { DashboardShell } from "@/components/layout/DashboardShell";
+import { cn } from "@/lib/utils";
 
 export default function DashboardLayout({
   children,
@@ -19,9 +19,16 @@ export default function DashboardLayout({
   return (
     <div className="flex h-screen bg-zinc-950">
       <Sidebar collapsed={sidebarCollapsed} onToggle={handleToggleSidebar} />
-      <div className="flex flex-1 flex-col overflow-hidden">
+      <div
+        className={cn(
+          "flex flex-1 flex-col overflow-hidden transition-all duration-150",
+          sidebarCollapsed ? "pl-[60px]" : "pl-60"
+        )}
+      >
         <TopBar sidebarCollapsed={sidebarCollapsed} />
-        <DashboardShell>{children}</DashboardShell>
+        <main className="flex-1 overflow-y-auto pt-12">
+          <div className="p-6">{children}</div>
+        </main>
       </div>
     </div>
   );
